@@ -1,0 +1,89 @@
+@media only screen and (min-width: 600px){
+  .fixed-button {
+    position: fixed;
+    background: rgb(189, 3, 3);
+    color: #fff;
+    right: 27px;
+    bottom: 90px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .float, .margin {
+    position: fixed;
+    padding: 10px;
+    right:27px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    transition: all .1s ease;
+    z-index: 1;
+  }
+  .float {
+    bottom: 180px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .3);
+    color:white;
+    background-color: rgb(10, 10, 56);
+  }
+  .float:hover {
+    width: 200px;
+    height: 60px;
+  } 
+  .float:hover::after {
+    display: inline-table;
+    content: attr(data-text);
+    margin-left: 10px;
+  }
+  #Whatsapp{margin-bottom: 220px;} #İnstagram{margin-bottom: 160px;} #Youtube{margin-bottom: 100px;} #Arama{margin-bottom: 40px;} #Konum{margin-bottom: -20px;}
+    }
+      @media only screen and (max-width: 600px) {
+        .fixed-button {
+          position: fixed;
+          background: rgb(189, 3, 3);
+          color: #FFF;
+          right: 27px;
+          bottom: 90px;
+          height: 50px;
+          width: 50px;
+          border-radius: 100px;
+          border: none;
+          box-shadow: 0 5px 18px rgba(0, 0, 0, .3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 3;
+            }
+            .main2 {
+              position:fixed;
+              top: 380px;
+              right: 20px;
+              padding: 20px;
+              border-radius: 10px;
+              z-index: 2;
+            }
+            .sub-button{
+              width: 210px;
+              height: 50px;
+              margin-bottom: 10px;
+              margin-left: 45px;
+              color:white;
+              background-color: rgb(10, 10, 56);
+              border-radius: 100px;
+              border: none;
+              box-shadow: 0 5px 18px rgba(0, 0, 0, .3);
+              z-index: 1;
+            }
+            .sub-button::before{
+              font-size: 10px;
+              margin-right: 10px;
+              content:attr(data-text);
+            }
+    }
